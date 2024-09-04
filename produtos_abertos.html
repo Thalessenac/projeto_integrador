@@ -7,52 +7,70 @@
     <title>Produtos Abertos</title>
 </head>
 <body>
-    <h1>Cadastro de produtos abertos</h1>
     <div class="menu">
         <button class="menu-btn">Menu</button>
         <div class="menu-content">
-            <a href="#home">Início</a>
-            <a href="#form">Formulário</a>
+            <a href="Index.html">login</a>
+            <a href="menu.html">Modulos</a>
+            <a href="produtos_abertos.html">Produtos abertos</a>
+            <a href="estoque.html">Estoque</a>
         </div>
     </div>
 
-0
-    <form>
-        <label for="nomeProduto">Nome do Produto:</label>
-        <input type="text" id="nomeProduto" name="nomeProduto" required><br><br>
+    </nav>
 
-        <label for="dataAbertura">Data de Abertura:</label>
-        <input type="date" id="dataAbertura" name="dataAbertura" required><br><br>
+    <form class="form-produto">
+        <div class="form-group">
+            <h1>Produtos Abertos</h1>
+            <label for="nomeProduto">Nome do Produto:</label>
+            <input type="text" id="nomeProduto" name="nomeProduto" required>
+        </div>
 
-        <label for="dataVencimento">Data de Vencimento:</label>
-        <input type="date" id="dataVencimento" name="dataVencimento" required><br><br>
+        <div class="form-group">
+            <label for="dataAbertura">Data de Abertura:</label>
+            <input type="date" id="dataAbertura" name="dataAbertura" required>
+        </div>
 
-        <label for="dataFabricacao">Data de Fabricação:</label>
-        <input type="date" id="dataFabricacao" name="dataFabricacao" required><br><br>
+        <div class="form-group">
+            <label for="dataVencimento">Data de Vencimento:</label>
+            <input type="date" id="dataVencimento" name="dataVencimento" required>
+        </div>
 
-        <label for="lote">Lote:</label>
-        <input type="text" id="lote" name="lote"><br>
+        <div class="form-group">
+            <label for="dataFabricacao">Data de Fabricação:</label>
+            <input type="date" id="dataFabricacao" name="dataFabricacao" required>
+        </div>
 
-        <label for="nome">Nome/Assinatura:</label>
-        <input type="text" id="nome" name="nome" required><br><br>
+        <div class="form-group">
+            <label for="lote">Lote:</label>
+            <input type="text" id="lote" name="lote">
+        </div>
 
-        
-    <div class="container">
-        <h1>Formulário de Medidas</h1>
-        <form>
-           <label for="amount">Quantidade:</label>
-           <input type="number" id="amount" name="amount" placeholder="Insira a quantidade" required>
-           
-           <label for="unit">Unidade:</label>
-           <select id="unit" name="unit">
-              <option value="kg">Quilogramas (kg)</option>
-              <option value="g">Gramas (g)</option>
-              <option value="ml">Mililitros (ml)</option>
-              <option value="l">Litros (l)</option>
-           </select>
+        <div class="form-group">
+            <label for="nome">Nome/Assinatura:</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
 
-        <input type="submit" value="Enviar">
+        <h2>Formulário de Medidas</h2>
+
+        <div class="form-group">
+            <label for="amount">Quantidade:</label>
+            <input type="number" id="amount" name="amount" placeholder="Insira a quantidade" required>
+        </div>
+
+        <div class="form-group">
+            <label for="unit">Unidade:</label>
+            <select id="unit" name="unit">
+                <option value="kg">Quilogramas (kg)</option>
+                <option value="g">Gramas (g)</option>
+                <option value="ml">Mililitros (ml)</option>
+                <option value="l">Litros (l)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Enviar">
+        </div>
     </form>
 </body>
 </html>
-
