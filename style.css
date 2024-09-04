@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: url('fundo.png') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 420px;
+    background: rgba(255, 255, 255, 0.2); /* Ajuste para maior opacidade */
+    border: 2px solid rgba(0, 0, 0, 0.2); /* Cor preta */
+    backdrop-filter: blur(20px);
+    border-radius: 12px;
+    padding: 30px 40px;
+}
+
+h1 {
+    font-size: 31px;
+    text-align: center;
+    color: #000; /* Cor preta */
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-container input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.2); /* Cor preta */
+    font-size: 16px;
+    border-radius: 10px;
+    color: #000; /* Cor preta */
+    padding: 20px 45px 20px 20px;
+}
+
+.input-container input::placeholder {
+    color: #000; /* Cor preta */
+}
+
+.input-container img {
+    position: absolute;
+    right: 8px;
+    top: 14px;
+    margin-top: 0px;
+}
+
+.input-container a {
+    font-size: 16px;
+    margin-top: 5px;
+    color: #000; /* Cor preta */
+    text-decoration: none;
+}
+
+.input-container a:hover {
+    text-decoration: underline;
+    color: #000; /* Cor preta */
+}
+
+.submit-button {
+    width: 100%;
+    height: 50px;
+    background-color: #c27b5a;
+    border: none;
+    border-radius: 12px;
+    color: #000;
+    font-weight: 700;
+    margin-top: 24px;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+}
+
+.submit-button:hover {
+    background-color: #e4c4ab;
+
+.registrar-link {
+    text-align: center;
+}
+
+.registrar-link p {
+    font-size: 16px;
+    color: #000; /* Cor preta */
+    font-weight: 500;
+}
+
+.registrar-link p a {
+    font-size: 16px;
+    color: #000; /* Cor preta */
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.registrar-link p a:hover {
+    text-decoration: underline;
+}

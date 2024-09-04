@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffe7cf; /* Cor de fundo suave */
+    position: relative; /* Adicionado para o posicionamento do menu */
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #67412e;
+}
+
+form {
+    background-color: #e4c4ab; /* Cor de fundo do formulário */
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 25px 25px 100px #67412e;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #67412e; /* Cor do texto do rótulo */
+}
+
+input[type="text"],
+input[type="date"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #67412e; /* Cor da borda */
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    background-color: #ffffff; /* Cor de fundo do campo de entrada */
+}
+
+input[type="text"]:hover,
+input[type="date"]:hover {
+    border-color: #e4c4ab; /* Cor da borda quando o campo é focado */
+    background-color: #f9f5f0; /* Cor de fundo do campo de entrada quando focado */
+    transform: scale(1.05);
+}
+
+input[type="submit"] {
+    width: 90%; /* Diminuir a largura do botão */
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #67412e; /* Cor de fundo do botão */
+    color: #ffe7cf; /* Cor do texto do botão */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 10px; /* Adicionar margem no topo para espaçamento */
+    box-sizing: border-box;
+}
+
+input[type="submit"]:hover {
+    background-color: #e4c4ab; /* Cor de fundo do botão ao passar o mouse */
+    color: #67412e; /* Cor do texto do botão ao passar o mouse */
+}
+
+.menu {
+    position: absolute; /* Altera o posicionamento do menu */
+    top: 20px; /* Distância do topo */
+    left: 20px; /* Distância da esquerda */
+    display: inline-block;
+}
+
+.menu-btn {
+    background-color: #67412e; /* Cor de fundo do botão */
+    color: #ffe7cf; /* Cor do texto do botão */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: #e4c4ab; /* Cor de fundo do menu dropdown */
+    min-width: 160px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    top: 100%; /* Alinha o menu dropdown abaixo do botão */
+    left: 0; /* Alinha o menu dropdown à esquerda do botão */
+}
+
+.menu-content a {
+    color: #67412e; /* Cor do texto dos links */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu-content a:hover {
+    background-color: #ffe7cf; /* Cor de fundo ao passar o mouse */
+}
+
+.menu-btn:hover + .menu-content,
+.menu-content:hover {
+    display: block;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #e4c4ab;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #67412e;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #e4c4ab;
+  }
+  
+  td {
+    background-color: #ffe7cf;
+  }
+  
+  .delete-btn {
+    background-color: #67412e;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background-color: #67412e;
+  }
+  
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Estoque</title>
+    <link rel="stylesheet" href="style_produtos_abertos.css">
+</head>
+<body>
+    <div class="menu">
+        <button class="menu-btn">Menu</button>
+        <div class="menu-content">
+            <a href="Index.html">login</a>
+            <a href="menu.html">Modulos</a>
+            <a href="estoque.html">Estoque</a>
+            <a href="cadastro_produtos.html">Produtos abertos</a>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Gerenciamento de Estoque</h1>
+
+        <table id="product-table">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Quantidade</th>
+                    <th>Validade</th>
+                    <th>Excluir</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Produtos de exemplo -->
+                <tr>
+                    <td>Produto A</td>
+                    <td>50</td>
+                    <td>2024-12-31</td>
+                    <td><button class="delete-btn">Excluir</button></td>
+                </tr>
+                <tr>
+                    <td>Produto B</td>
+                    <td>30</td>
+                    <td>2025-06-15</td>
+                    <td><button class="delete-btn">Excluir</button></td>
+                </tr>
+                <tr>
+                    <td>Produto C</td>
+                    <td>20</td>
+                    <td>2024-09-01</td>
+                    <td><button class="delete-btn">Excluir</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

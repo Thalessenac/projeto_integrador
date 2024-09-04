@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_produtos_abertos.css">
+    <title>Produtos Abertos</title>
+</head>
+<body>
+    <h1>Cadastro de produtos abertos</h1>
+    <div class="menu">
+        <button class="menu-btn">Menu</button>
+        <div class="menu-content">
+            <a href="#home">Início</a>
+            <a href="#form">Formulário</a>
+        </div>
+    </div>
+
+0
+    <form>
+        <label for="nomeProduto">Nome do Produto:</label>
+        <input type="text" id="nomeProduto" name="nomeProduto" required><br><br>
+
+        <label for="dataAbertura">Data de Abertura:</label>
+        <input type="date" id="dataAbertura" name="dataAbertura" required><br><br>
+
+        <label for="dataVencimento">Data de Vencimento:</label>
+        <input type="date" id="dataVencimento" name="dataVencimento" required><br><br>
+
+        <label for="dataFabricacao">Data de Fabricação:</label>
+        <input type="date" id="dataFabricacao" name="dataFabricacao" required><br><br>
+
+        <label for="lote">Lote:</label>
+        <input type="text" id="lote" name="lote"><br>
+
+        <label for="nome">Nome/Assinatura:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        
+    <div class="container">
+        <h1>Formulário de Medidas</h1>
+        <form>
+           <label for="amount">Quantidade:</label>
+           <input type="number" id="amount" name="amount" placeholder="Insira a quantidade" required>
+           
+           <label for="unit">Unidade:</label>
+           <select id="unit" name="unit">
+              <option value="kg">Quilogramas (kg)</option>
+              <option value="g">Gramas (g)</option>
+              <option value="ml">Mililitros (ml)</option>
+              <option value="l">Litros (l)</option>
+           </select>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
+

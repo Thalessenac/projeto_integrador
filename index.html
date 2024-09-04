@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <title>Tela de Login</title>
+</head>
+<body>
+    <div class="container">
+        <form id="loginForm">
+            <h1>Cozinha Senac</h1>
+            <div class="input-container">
+                <input id="nome" placeholder="Nome" type="text" required>
+                <img width="25" height="25" src="https://img.icons8.com/ios/50/user--v1.png" alt="Ícone de usuário"/>
+            </div>
+
+            <div class="input-container">
+                <input id="password" placeholder="Senha" type="password" required>
+                <img width="25" height="25" src="https://img.icons8.com/ios/50/lock--v1.png" alt="Ícone de cadeado" />
+                <a href="#">Esqueci minha senha</a>
+            </div>
+
+            <button id="entrarPagina" type="submit" class="submit-button">Entrar</button>
+
+            <div class="registrar-link">
+                <p>Não está cadastrado? <a href="#">Cadastrar</a></p>
+            </div>
+        </form>
+        <p id="errorMsg" class="error-message">Login ou senha incorretos!</p>
+    </div>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            var nome = document.getElementById("nome").value;
+            var password = document.getElementById("password").value;
+
+            if (nome === "cozinhasenac" && password === "123456") {
+                window.location.href = "menu.html";
+            } else {
+                document.getElementById("errorMsg").style.display = "block";
+            }
+        });
+    </script>
+</body>
+</html>
