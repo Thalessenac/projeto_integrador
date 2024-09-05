@@ -154,5 +154,20 @@ input[type="submit"]:hover {
   .delete-btn:hover {
     background-color: #67412e;
   }
-  
+
+.status-indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.status-green {
+    background-color: #4caf50;
+}
+.status-yellow {
+    background-color: #ffeb3b;
+}
+.status-red {
+    background-color: #f44336;
+}
 
